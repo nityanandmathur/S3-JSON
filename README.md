@@ -1,2 +1,21 @@
 # S3-JSON
-App to read JSON file from S3, view and update its content.
+
+## Pre-req.
+```bash
+pip install boto3
+pip install awscli
+
+aws configure
+```
+
+## Usage
+Update `BUCKET_NAME` and `FILE_KEY` in the python file.
+```bash
+python s3_json.py
+```
+## Exporting as an standalone desktop application
+```bash
+pip install pyinstaller
+
+pyinstaller --windowed s3_json.py
+```
